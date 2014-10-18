@@ -1,0 +1,182 @@
+/* Enter Custom CSS Below Here */
+
+
+.taylor-logo{
+  background: url('images/taylor-logo.png') no-repeat center center;
+  background-size:contain;
+  width:120px;
+  height:20px;
+  display: inline-block;
+  color:white;
+  font-size:0;
+}
+
+/**
+ * Top Header of homepage
+ */
+
+.top-header article{
+  margin-bottom:2px;
+}
+
+.top-header.left-section .top-header-left h3::after{
+  opacity: 1;
+}
+
+.top-header.right-section .top-header-right h3::after{
+  opacity: 1;
+}
+
+.top-header h3::after{
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: inherit;
+  top: 5px;
+  left: 50%;
+  transform: rotate(45deg) translate(20%,120%);
+  z-index: -1;
+  opacity: 0;
+  transition: all 200ms linear 0ms;
+}
+
+.top-header,
+.top-header article,
+.vmenu{
+  max-height:0;
+  height:100%;
+  transition: all 0ms linear 500ms;
+}
+
+.top-header.open,
+.top-header > article.open .vmenu,
+.top-header article.open{
+  max-height:100%;
+  height:100%;
+  transition: all 0ms linear 0ms;
+}
+article.open {
+  z-index: 99;
+}
+
+.vmenu-item{
+  height:23.5%;
+  display: block;
+  display: table;
+  width:100%;
+  opacity: 0;
+}
+.vmenu-item:last-child{
+}
+
+.top-header > article.open .vmenu-item{
+  opacity: 1;
+}
+
+.top-header > article.open .vmenu-item:nth-of-type(1){
+  transition: opacity 200ms linear 0ms, background-color 120ms linear;
+}
+.top-header > article.open .vmenu-item:nth-of-type(2){
+  transition: opacity 200ms linear 50ms, background-color 120ms linear;
+}
+.top-header > article.open .vmenu-item:nth-of-type(3){
+  transition: opacity 200ms linear 100ms, background-color 120ms linear;
+}
+.top-header > article.open .vmenu-item:nth-of-type(4){
+  transition: opacity 200ms linear 150ms, background-color 120ms linear;
+}
+
+.top-header > article .vmenu-item:nth-of-type(1){
+  transition: opacity 200ms linear 150ms, background-color 120ms linear;
+}
+.top-header > article .vmenu-item:nth-of-type(2){
+  transition: opacity 200ms linear 100ms, background-color 120ms linear;
+}
+.top-header > article .vmenu-item:nth-of-type(3){
+  transition: opacity 200ms linear 50ms, background-color 120ms linear;
+}
+.top-header > article .vmenu-item:nth-of-type(4){
+  transition: opacity 200ms linear 0ms, background-color 120ms linear;
+}
+
+.vmenu-item a{
+  display: table-cell;
+  vertical-align: middle;
+  font-size:50px;
+}
+
+/**
+ * left white menu
+ */
+.white-bg h3{
+  background-color:white;
+}
+
+.white-bg.open{
+  background-color:transparent;
+}
+
+.white-bg .vmenu-item{
+  background-color:rgba(255,255,255,0.9);
+  border-bottom:1px solid white;
+}
+
+.white-bg .vmenu-item:hover{
+  border:3px solid #fff;
+  background-color:rgba(0,0,0,0.7);
+}
+
+.white-bg .vmenu-item:hover a{
+  color:#fff;
+}
+
+.white-bg .vmenu-item a{
+  transition: color 200ms linear;
+  color:#111;
+}
+
+/**
+ * right white menu
+ */
+
+.black-bg.open{
+  background-color:transparent;
+}
+
+.black-bg h3{
+  background-color:black;
+}
+
+.black-bg .vmenu-item{
+  background-color:rgba(0,0,0,0.7);
+  border-bottom:1px solid #000;
+}
+
+.black-bg .vmenu-item:hover{
+  border:3px solid #111;
+  background-color:rgba(255,255,255,0.7);
+}
+
+.black-bg .vmenu-item:hover a{
+  color:#111;
+}
+
+.black-bg .vmenu-item a{
+  transition: color 200ms linear;
+  color:#fff;
+}
+
+/*
+.ms-left,.ms-right{
+  background-color: #000;
+}
+
+.bg-cover{
+  background-color: #000;
+  opacity: 0.6;
+}*/
+
+.ms-tableCell{
+  background-color: rgba(0,0,0,0.2)!important;
+}
