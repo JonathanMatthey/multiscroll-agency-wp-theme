@@ -533,12 +533,31 @@ input[type="submit"]:hover,
 .master-footer .taylor-logo-white{
     width:200px;
     height:34px;
-    float:left;
     margin-top:6px;
+    display: inline-block;
+}
+
+.master-footer .red-t{
+    display: inline-block;
+    width:40px;
+    height:40px;
+    margin-right:10px;
+    margin-top:3px;
+}
+
+.footer-logo{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.social-links{
+    text-align:center;
+    font-size:0;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 
 .social-links a{
-    float:left;
     background-color: rgba(255,255,255,0.5);
     border-radius:100%;
     display: inline-block;
@@ -546,13 +565,13 @@ input[type="submit"]:hover,
     height:24px;
     text-align:center;
     line-height: 26px;
-    margin-top:4px;
-    margin-right:7px;
+    margin-left:6px;
+    margin-right:6px;
     transition:background-color 100ms linear;
 }
-.social-links a:last-child{
+/*.social-links a:first-child{
     margin-right:0;
-}
+}*/
 
 .social-links a:hover{
     background-color: rgba(255,255,255,1);
@@ -563,7 +582,7 @@ input[type="submit"]:hover,
 }
 
 .contact-us{
-    float:right;
+    text-align: right;
 }
 
 .social-links a.facebook{
@@ -582,21 +601,13 @@ input[type="submit"]:hover,
     color:#1E2A30;
 }
 
-.master-footer .red-t{
-    width:40px;
-    height:40px;
-    float:left;
-    margin-right:10px;
-    margin-top:3px;
-}
-
 .master-footer{
     background-color:#1E2A30;
     color:white;
 }
 
 .master-footer-content{
-    padding:20px;
+    padding:10px;
 }
 
 .master-footer-content ul{
@@ -606,19 +617,20 @@ input[type="submit"]:hover,
     float:right;
 }
 
-.master-footer-content ul li{
-    float:left;
-    width:140px;
-    padding: 2px 10px;
-}
-
-.master-footer-content ul li:nth-of-type(5){
-    clear:left;
-}
-
 .master-footer-content a{
     font-weight:bold;
     color:white;
+}
+
+.p-m{
+  padding:10px;
+}
+
+.master-footer-content a.footer-link{
+    clear:both;
+    display: block;
+    margin-bottom:4px;
+    text-align: center;
 }
 
 .master-footer-content a:hover{
@@ -646,6 +658,23 @@ input[type="submit"]:hover,
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+
+@media screen and (max-width: 768px){
+    .p-m{
+        padding:0;
+    }
+    .master-footer-content a.footer-link{
+        margin-top:10px;
+    }
+}
+
+@media screen and (min-width:1600px){
+    .master-footer .taylor-logo-white,
+    .master-footer .red-t{
+        float:left;
+    }
 }
 
 /* AGENCY / WHITE SQUARES THEME */
