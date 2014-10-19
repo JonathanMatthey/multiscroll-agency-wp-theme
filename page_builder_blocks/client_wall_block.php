@@ -40,19 +40,23 @@ class AQ_Client_Wall_Block extends AQ_Block {
 
 	<section class="main-section-with-bg" <?php if($bg_image) { echo 'style="background-image:url('.$bg_image.')"';}?> >
 		<div class="row">
-			<section class="container full-img-bg white-squares-container">
-				<div class="trans-bg-dark col-md-10 col-md-offset-1">
-					<div class="col-md-3">qwe</div>
-					<div class="col-md-3"></div>
-					<div class="col-md-3"></div>
-					<div class="col-md-3"></div>
-					<div class="col-md-3"></div>
-					<div class="col-md-3"></div>
-					<div class="col-md-3"></div>
-					<div class="col-md-3"></div>
-					<div class="col-md-4"></div>
-					<div class="col-md-4"></div>
-					<div class="col-md-4"></div>
+			<section class="container full-img-bg client-wall-container">
+				<div class="trans-bg-dark col-xs-10 col-xs-offset-1">
+					<div class="col-xs-12 col-sm-6 col-md-4  col-lg-3 client-logo"></div>
+					<div class="col-xs-12 col-sm-6 col-md-4  col-lg-3 client-logo"></div>
+					<div class="col-xs-12 col-sm-6 col-md-4  col-lg-3 client-logo"></div>
+					<div class="col-xs-12 col-sm-6 col-md-4  col-lg-3 client-logo"></div>
+					<div class="col-xs-12 col-sm-6 col-md-4  col-lg-3 client-logo"></div>
+					<div class="col-xs-12 col-sm-6 col-md-4  col-lg-3 client-logo"></div>
+					<div class="col-xs-12 col-sm-6 col-md-4  col-lg-3 client-logo"></div>
+					<div class="col-xs-12 col-sm-6 col-md-4  col-lg-3 client-logo"></div>
+					<div class="col-xs-12 col-sm-6 col-md-4  col-lg-3 client-logo"></div>
+					<div class="col-xs-12 col-sm-6 col-md-4  col-lg-3 client-logo"></div>
+					<div class="col-xs-12 col-sm-6 col-md-4  col-lg-3 client-logo"></div>
+					<div class="col-xs-12 col-sm-6 col-md-4  col-lg-3 client-logo"></div>
+					<div class="col-xs-12 col-sm-6 col-md-4  col-lg-4 client-logo"></div>
+					<div class="col-xs-12 col-sm-6 col-md-4  col-lg-4 client-logo"></div>
+					<div class="col-xs-12 col-sm-6 col-md-4  col-lg-4 client-logo"></div>
 				</div>
 			</section>
 		</div>

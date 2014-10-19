@@ -713,8 +713,96 @@ input[type="submit"]:hover,
 
 }
 
+/* CLIENT WALL  */
+.client-wall-container .client-logo{
+    height:120px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 220px auto;
+}
+
+@media (max-width: 768px) {
+    .client-wall-container .client-logo:first-child{
+        margin-top:30px;
+    }
+    .client-wall-container .client-logo:last-child{
+        margin-bottom:30px;
+    }
+}
+
+.client-wall-container .client-logo:first-child{
+    margin-top:0px;
+}
+.client-wall-container .client-logo:last-child{
+    margin-bottom:0px;
+}
+
+.client-wall-container .client-logo:nth-of-type(1){
+    background-image:url(images/client-logos/1.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(2){
+    background-image:url(images/client-logos/2.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(3){
+    background-image:url(images/client-logos/3.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(4){
+    background-image:url(images/client-logos/4.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(5){
+    background-image:url(images/client-logos/5.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(6){
+    background-image:url(images/client-logos/6.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(7){
+    background-image:url(images/client-logos/7.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(8){
+    background-image:url(images/client-logos/8.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(9){
+    background-image:url(images/client-logos/9.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(10){
+    background-image:url(images/client-logos/10.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(11){
+    background-image:url(images/client-logos/11.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(12){
+    background-image:url(images/client-logos/12.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(13){
+    background-image:url(images/client-logos/13.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(14){
+    background-image:url(images/client-logos/14.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(15){
+    background-image:url(images/client-logos/15.png);
+}
+
+
 /* AGENCY / WHITE SQUARES THEME */
 .white-squares-container{
+}
+
+.full-img-bg{
     padding:100px;
 }
 
@@ -1239,42 +1327,6 @@ input[type="submit"]:hover,
     padding: 7px;
     font-style: italic;
 }
-
-
-/*CLIENTS*/
-.clients-container{
-    padding: 100px;
-}
-.client-logo{
-}
-.client-logo-inner{
-    opacity: 0.3;
-    border-right:solid 2px #ccc;
-    border-bottom:solid 2px #ccc;
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-.client-logo-inner:hover{
-    opacity: 1;
-    border-right:solid 2px #eee;
-    border-bottom:solid 2px #eee;
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-
-.client-logo:last-child .client-logo-inner{
-    border-right:none;
-}
-.client-logo-row:last-child .client-logo-inner{
-    border-bottom:none;
-}
-
 
 
 /*AWARDS*/
