@@ -51,6 +51,10 @@ if(class_exists('AQ_Page_Builder')) {
 		require_once ( "page_builder_blocks/text_block.php" );
 		aq_register_block('AQ_Ebor_Text_Block');
 	}
+	if(!( class_exists('AQ_Ebor_Text_FullWidth_Block') )){
+		require_once ( "page_builder_blocks/text_fullwidth_block.php" );
+		aq_register_block('AQ_Ebor_Text_FullWidth_Block');
+	}
 	if(!( class_exists('AQ_Image_Block') )){
 		require_once ( "page_builder_blocks/image_block.php" );
 		aq_register_block('AQ_Image_Block');

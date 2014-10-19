@@ -9,69 +9,168 @@ class AQ_White_Squares_Block extends AQ_Block {
 			'resizable' => false,
 			'block_icon' => '<i class="fa fa-font"></i>',
 			'block_description' => 'White Squares with<br />Background Image'
-		);
+			);
 		parent::__construct('aq_white_squares_block', $block_options);
 	}
 
 	function form($instance) {
 
 		$defaults = array(
-			'square1' => '',
-			'square2' => '',
-			'square3' => '',
-			'square4' => '',
-		);
+			'bg_image' => '',
+			'square1_title' => '',
+			'square1_content' => '',
+			'square2_title' => '',
+			'square2_content' => '',
+			'square3_title' => '',
+			'square3_content' => '',
+			'square4_title' => '',
+			'square4_content' => ''
+			);
 
 		$instance = wp_parse_args($instance, $defaults);
 		extract($instance);
-	?>
+		?>
 
 		<p class="description">
-			<label for="<?php echo $this->get_field_id('square1') ?>">
-				Square 1
-				<?php echo aq_field_textarea('square1', $block_id, $square1, $size = 'full', true) ?>
-			</label>
-		</p>
-		<p class="description">
-			<label for="<?php echo $this->get_field_id('square2') ?>">
-				Square 2
-				<?php echo aq_field_textarea('square2', $block_id, $square2, $size = 'full', true) ?>
-			</label>
-		</p>
-		<p class="description">
-			<label for="<?php echo $this->get_field_id('square3') ?>">
-				Square 3 <code>Optional</code>
-				<?php echo aq_field_textarea('square3', $block_id, $square3, $size = 'full', true) ?>
-			</label>
-		</p>
-		<p class="description">
-			<label for="<?php echo $this->get_field_id('square4') ?>">
-				Square 4 <code>Optional</code>
-				<?php echo aq_field_textarea('square4', $block_id, $square4, $size = 'full', true) ?>
+			<label for="<?php echo $this->get_field_id('bg_image') ?>">
+				Upload Background Image
+				<?php echo aq_field_upload('bg_image', $block_id, $bg_image, $media_type = 'image') ?>
 			</label>
 		</p>
 
-	<?php
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('square1_title') ?>">
+				Square 1 - Title
+				<?php echo aq_field_input('square1_title', $block_id, $square1_title, $size = 'full') ?>
+			</label>
+		</p>
+
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('square1_content') ?>">
+				Square 1 - Content
+				<?php echo aq_field_textarea('square1_content', $block_id, $square1_content, $size = 'full', true) ?>
+			</label>
+		</p>
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('square2_title') ?>">
+				Square 2 - Title
+				<?php echo aq_field_input('square2_title', $block_id, $square2_title, $size = 'full') ?>
+			</label>
+		</p>
+
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('square2_content') ?>">
+				Square 2 - Content  <code>Optional</code>
+				<?php echo aq_field_textarea('square2_content', $block_id, $square2_content, $size = 'full', true) ?>
+			</label>
+		</p>
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('square3_title') ?>">
+				Square 3 - Title  <code>Optional</code>
+				<?php echo aq_field_input('square3_title', $block_id, $square3_title, $size = 'full') ?>
+			</label>
+		</p>
+
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('square3_content') ?>">
+				Square 3 - Content  <code>Optional</code>
+				<?php echo aq_field_textarea('square3_content', $block_id, $square3_content, $size = 'full', true) ?>
+			</label>
+		</p>
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('square4_title') ?>">
+				Square 4 - Title  <code>Optional</code>
+				<?php echo aq_field_input('square4_title', $block_id, $square4_title, $size = 'full') ?>
+			</label>
+		</p>
+
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('square4_content') ?>">
+				Square 4 - Content  <code>Optional</code>
+				<?php echo aq_field_textarea('square4_content', $block_id, $square4_content, $size = 'full', true) ?>
+			</label>
+		</p>
+
+		<?php
 	}// end form
 
 	function block($instance) {
 		extract($instance);
-	?>
+		?>
 
-		<section class="container page-head white-squares white-bg">
-		  <div class="row">
-		          <article class="col-md-8 col-md-offset-2 text-center">
-		                <div class="inner-pad">
-		                    <?php
-		                    	if( $square1 )
-		                    		echo '<h1 class=""><span>'. htmlspecialchars_decode($square1) .'</span></h1>';
+	<section class="main-section-with-bg" <?php if($bg_image) { echo 'style="background-image:url('.$bg_image.')"';}?> >
+		<div class="row">
+			<section class="container full-img-bg white-squares-container">
+				<div class="trans-bg-dark col-md-10 col-md-offset-1">
+					<?php
+						if( $square1_title ){
+							echo '<div class="row no-margin">';
+							echo '	<article class="col-md-6 col-md-offset-6">';
+							echo '		<div class="white-square"><h2>'. htmlspecialchars_decode($square1_title) . '</h2>';
 
-		                    	echo wpautop(do_shortcode(htmlspecialchars_decode($text)));
-		                    ?>
-		                </div>
-		          </article>
-		  </div>
-		</section>
+							if( $square1_content ){
+								echo '<div class="content">';
+								echo wpautop(do_shortcode(htmlspecialchars_decode($square1_content)));
+								echo '		</div>';
+							}
+
+							echo '		</div>';
+							echo '	</article>';
+							echo '</div>';
+						}
+
+						if( $square2_title ){
+							echo '<div class="row no-margin">';
+							echo '	<article class="col-md-6">';
+							echo '		<div class="white-square"><h2>'. htmlspecialchars_decode($square2_title) . '</h2>';
+
+							if( $square2_content ){
+								echo '<div class="content">';
+								echo wpautop(do_shortcode(htmlspecialchars_decode($square2_content)));
+								echo '		</div>';
+							}
+
+							echo '		</div>';
+							echo '	</article>';
+							echo '</div>';
+						}
+
+						if( $square3_title ){
+							echo '<div class="row no-margin">';
+							echo '	<article class="col-md-6 col-md-offset-6">';
+							echo '		<div class="white-square"><h2>'. htmlspecialchars_decode($square3_title) . '</h2>';
+
+							if( $square3_content ){
+								echo '<div class="content">';
+								echo wpautop(do_shortcode(htmlspecialchars_decode($square3_content)));
+								echo '		</div>';
+							}
+
+							echo '		</div>';
+							echo '	</article>';
+							echo '</div>';
+						}
+
+						if( $square4_title ){
+							echo '<div class="row no-margin">';
+							echo '	<article class="col-md-6">';
+							echo '		<div class="white-square"><h2>'. htmlspecialchars_decode($square4_title) . '</h2>';
+
+							if( $square4_content ){
+								echo '<div class="content">';
+								echo wpautop(do_shortcode(htmlspecialchars_decode($square4_content)));
+								echo '		</div>';
+							}
+
+							echo '		</div>';
+							echo '	</article>';
+							echo '</div>';
+						}
+					?>
+				</div>
+			</section>
+		</div>
+	</section>
 
 	<?php
 	}//end block

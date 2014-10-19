@@ -2,11 +2,12 @@
 </div><!-- end wrap -->
 </section><!-- end mast-wrap -->
 
-<?php 
+
+<?php
 	if( get_option('footer_button_url') )
 		get_template_part('inc/content','footer-button');
-		
-	wp_footer(); 
+
+	wp_footer();
 ?>
 
 </body>

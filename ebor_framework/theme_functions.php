@@ -48,9 +48,9 @@ if(!( function_exists('ebor_reflex_page_header') )){
 	function ebor_reflex_page_header( $title = false, $subtitle = false, $image = false, $show_cats = false ){
 		global $post;
 
-		// echo '<section class="container page-head bg-cover silver-bg" style="background-image: url('. $image .');"><div class="row"><article class="col-md-12 text-center"><div class="inner-pad trans-dark-low">';
-		// if( $title )
-		// 	echo '<h1 class="black"><span class="color-bg">'. $title .'</span></h1>';
+		echo '<section class="container page-head bg-cover silver-bg" style="background-image: url('. $image .');"><div class="row"><article class="col-md-12 text-center"><div class="inner-pad trans-dark-low">';
+		if( $title )
+			echo '<h1 class="black"><span class="color-bg">'. $title .'</span></h1>';
 
 		if( is_singular('post') ) {
 
