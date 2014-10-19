@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'GothamNarrowLight';
+    src: url('gothamnarrow-light.eot');
+    src: url('gothamnarrow-light.eot') format('embedded-opentype'),
+         url('gothamnarrow-light.woff2') format('woff2'),
+         url('gothamnarrow-light.woff') format('woff'),
+         url('gothamnarrow-light.ttf') format('truetype'),
+         url('gothamnarrow-light.svg#GothamNarrowLight') format('svg');
+}
