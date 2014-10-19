@@ -55,7 +55,7 @@ class AQ_Ebor_Text_FullWidth_Block extends AQ_Block {
 		extract($instance);
 
 			echo '<div class="row full-width-text">';
-			echo '<div class="col-md-8 col-md-offset-2">';
+			echo '<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">';
 			echo '<div class="qwe">';
 
 			if($title)

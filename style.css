@@ -742,6 +742,22 @@ input[type="submit"]:hover,
     padding:50px;
 }
 
+@media (max-width: 768px) {
+
+    .trans-bg-dark{
+        padding:0px;
+    }
+    .white-squares-container article{
+        padding:20px;
+    }
+
+    .white-squares-container article p:last-child{
+        margin-bottom:0;
+        padding-bottom:0;
+    }
+}
+
+
 .full-width-text{
     padding: 100px 0;
 }

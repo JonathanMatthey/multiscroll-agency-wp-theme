@@ -67,6 +67,10 @@ if(class_exists('AQ_Page_Builder')) {
 		require_once ( "page_builder_blocks/call_to_action_block.php" );
 		aq_register_block('AQ_Call_To_Action_Block');
 	}
+	if(!( class_exists('AQ_Client_Wall_Block') )){
+		require_once ( "page_builder_blocks/client_wall_block.php" );
+		aq_register_block('AQ_Client_Wall_Block');
+	}
 	if(!( class_exists('AQ_Agency_Head_Block') )){
 		require_once ( "page_builder_blocks/agency_head_block.php" );
 		aq_register_block('AQ_Agency_Head_Block');
