@@ -558,6 +558,7 @@ input[type="submit"]:hover,
 }
 
 .social-links a{
+    vertical-align: top;
     background-color: rgba(255,255,255,0.5);
     border-radius:100%;
     display: inline-block;
@@ -670,11 +671,46 @@ input[type="submit"]:hover,
     }
 }
 
+@media screen and (min-width:768px){
+    .master-footer-content a.footer-link{
+        text-align:left;
+    }
+    .master-footer-content .contact-us a.footer-link{
+        text-align:center;
+    }
+}
+
+@media screen and (min-width:980px){
+    .social-links a{
+        margin-right:3px;
+        margin-left:3px;
+    }
+    .social-links a:first-child{
+        margin-left:0px;
+    }
+    .social-links a:last-child{
+        margin-right:0px;
+    }
+}
+
 @media screen and (min-width:1600px){
     .master-footer .taylor-logo-white,
     .master-footer .red-t{
         float:left;
     }
+
+    .social-links{
+        margin-bottom:0px;
+    }
+    .contact-us{
+        float:right;
+        padding-bottom:0;
+    }
+
+    .footer-logo{
+        margin: 0px 0;
+    }
+
 }
 
 /* AGENCY / WHITE SQUARES THEME */
