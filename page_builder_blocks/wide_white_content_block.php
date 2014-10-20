@@ -116,120 +116,116 @@ class AQ_Wide_White_Content_Block extends AQ_Block {
 					<h1>Work</h1>
 					<?php
 						if( $block1_title ){
-							echo '<div class="row no-margin">';
+							echo '<div class="row  no-margin">';
 							echo '	<article class="col-md-12">';
 							echo '		<div class="row">';
-							echo '			<div class="col-md-1"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
+							echo '			<div class="col-md-1 item-index no-gutter"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
 							echo '			<div class="col-md-11"><h4>' . htmlspecialchars_decode($block1_title) . '</h4></div>';
 							echo '		</div>';
-							if( $block1_content ){
-								echo '		<div class="row">';
-								echo '			<div class="col-md-11 col-md-offset-1 video-wrapper">';
+							echo '		<div class="row">';
+							echo '			<div class="col-md-11 col-md-offset-1">';
+							if( $block1_video_id ){
 								echo '				<a class="fancybox-media" href="http://vimeo.com/36031564"><div class="video"></div></a>';
-								// echo 					wpautop(do_shortcode(htmlspecialchars_decode($block1_content)));
-								echo '			</div>';
-								echo '		</div>';
+							} else if( $block1_content ){
+								echo 					wpautop(do_shortcode(htmlspecialchars_decode($block1_content)));
 							}
+							echo '			</div>';
+							echo '		</div>';
 							echo '	</article>';
 							echo '</div>';
 						}
-					?>
-					<?php
 						if( $block1_title ){
-							echo '<div class="row no-margin">';
+							echo '<div class="row  no-margin">';
 							echo '	<article class="col-md-12">';
 							echo '		<div class="row">';
-							echo '			<div class="col-md-1"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
+							echo '			<div class="col-md-1 item-index no-gutter"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
 							echo '			<div class="col-md-11"><h4>' . htmlspecialchars_decode($block1_title) . '</h4></div>';
 							echo '		</div>';
-							if( $block1_content ){
-								echo '		<div class="row">';
-								echo '			<div class="col-md-11 col-md-offset-1 video-wrapper">';
+							echo '		<div class="row">';
+							echo '			<div class="col-md-11 col-md-offset-1">';
+							if( $block1_video_id ){
 								echo '				<a class="fancybox-media" href="http://vimeo.com/36031564"><div class="video"></div></a>';
-								// echo 					wpautop(do_shortcode(htmlspecialchars_decode($block1_content)));
-								echo '			</div>';
-								echo '		</div>';
+							} else if( $block1_content ){
+								echo 					wpautop(do_shortcode(htmlspecialchars_decode($block1_content)));
 							}
+							echo '			</div>';
+							echo '		</div>';
 							echo '	</article>';
 							echo '</div>';
 						}
-					?>
-					<?php
 						if( $block1_title ){
-							echo '<div class="row no-margin">';
+							echo '<div class="row  no-margin">';
 							echo '	<article class="col-md-12">';
 							echo '		<div class="row">';
-							echo '			<div class="col-md-1"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
+							echo '			<div class="col-md-1 item-index no-gutter"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
 							echo '			<div class="col-md-11"><h4>' . htmlspecialchars_decode($block1_title) . '</h4></div>';
 							echo '		</div>';
-							if( $block1_content ){
-								echo '		<div class="row">';
-								echo '			<div class="col-md-11 col-md-offset-1 video-wrapper">';
+							echo '		<div class="row">';
+							echo '			<div class="col-md-11 col-md-offset-1">';
+							if( $block1_video_id ){
 								echo '				<a class="fancybox-media" href="http://vimeo.com/36031564"><div class="video"></div></a>';
-								// echo 					wpautop(do_shortcode(htmlspecialchars_decode($block1_content)));
-								echo '			</div>';
-								echo '		</div>';
+							} else if( $block1_content ){
+								echo 					wpautop(do_shortcode(htmlspecialchars_decode($block1_content)));
 							}
+							echo '			</div>';
+							echo '		</div>';
 							echo '	</article>';
 							echo '</div>';
 						}
-					?>
-					<?php
 						if( $block1_title ){
-							echo '<div class="row no-margin">';
+							echo '<div class="row  no-margin">';
 							echo '	<article class="col-md-12">';
 							echo '		<div class="row">';
-							echo '			<div class="col-md-1"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
+							echo '			<div class="col-md-1 item-index no-gutter"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
 							echo '			<div class="col-md-11"><h4>' . htmlspecialchars_decode($block1_title) . '</h4></div>';
 							echo '		</div>';
-							if( $block1_content ){
-								echo '		<div class="row">';
-								echo '			<div class="col-md-11 col-md-offset-1 video-wrapper">';
+							echo '		<div class="row">';
+							echo '			<div class="col-md-11 col-md-offset-1">';
+							if( $block1_video_id ){
 								echo '				<a class="fancybox-media" href="http://vimeo.com/36031564"><div class="video"></div></a>';
-								// echo 					wpautop(do_shortcode(htmlspecialchars_decode($block1_content)));
-								echo '			</div>';
-								echo '		</div>';
+							} else if( $block1_content ){
+								echo 					wpautop(do_shortcode(htmlspecialchars_decode($block1_content)));
 							}
+							echo '			</div>';
+							echo '		</div>';
 							echo '	</article>';
 							echo '</div>';
 						}
-					?>
-					<?php
 						if( $block1_title ){
-							echo '<div class="row no-margin">';
+							echo '<div class="row  no-margin">';
 							echo '	<article class="col-md-12">';
 							echo '		<div class="row">';
-							echo '			<div class="col-md-1"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
+							echo '			<div class="col-md-1 item-index no-gutter"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
 							echo '			<div class="col-md-11"><h4>' . htmlspecialchars_decode($block1_title) . '</h4></div>';
 							echo '		</div>';
-							if( $block1_content ){
-								echo '		<div class="row">';
-								echo '			<div class="col-md-11 col-md-offset-1 video-wrapper">';
+							echo '		<div class="row">';
+							echo '			<div class="col-md-11 col-md-offset-1">';
+							if( $block1_video_id ){
 								echo '				<a class="fancybox-media" href="http://vimeo.com/36031564"><div class="video"></div></a>';
-								// echo 					wpautop(do_shortcode(htmlspecialchars_decode($block1_content)));
-								echo '			</div>';
-								echo '		</div>';
+							} else if( $block1_content ){
+								echo 					wpautop(do_shortcode(htmlspecialchars_decode($block1_content)));
 							}
+							echo '			</div>';
+							echo '		</div>';
 							echo '	</article>';
 							echo '</div>';
 						}
-					?>
-					<?php
 						if( $block1_title ){
-							echo '<div class="row no-margin">';
+							echo '<div class="row  no-margin">';
 							echo '	<article class="col-md-12">';
 							echo '		<div class="row">';
-							echo '			<div class="col-md-1"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
+							echo '			<div class="col-md-1 item-index no-gutter"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
 							echo '			<div class="col-md-11"><h4>' . htmlspecialchars_decode($block1_title) . '</h4></div>';
 							echo '		</div>';
-							if( $block1_content ){
-								echo '		<div class="row">';
-								echo '			<div class="col-md-11 col-md-offset-1 video-wrapper">';
+							echo '		<div class="row">';
+							echo '			<div class="col-md-11 col-md-offset-1 last-work-item">';
+							if( $block1_video_id ){
 								echo '				<a class="fancybox-media" href="http://vimeo.com/36031564"><div class="video"></div></a>';
-								// echo 					wpautop(do_shortcode(htmlspecialchars_decode($block1_content)));
-								echo '			</div>';
-								echo '		</div>';
+							} else if( $block1_content ){
+								echo 					wpautop(do_shortcode(htmlspecialchars_decode($block1_content)));
 							}
+							echo '			</div>';
+							echo '		</div>';
 							echo '	</article>';
 							echo '</div>';
 						}
