@@ -17,8 +17,8 @@ class AQ_White_Squares_Block extends AQ_Block {
 
 		$defaults = array(
 			'bg_image' => '',
-			'square1_title' => '',
-			'square1_content' => '',
+			'block1_title' => '',
+			'block1_content' => '',
 			'square2_title' => '',
 			'square2_content' => '',
 			'square3_title' => '',
@@ -39,16 +39,16 @@ class AQ_White_Squares_Block extends AQ_Block {
 		</p>
 
 		<p class="description">
-			<label for="<?php echo $this->get_field_id('square1_title') ?>">
+			<label for="<?php echo $this->get_field_id('block1_title') ?>">
 				Square 1 - Title
-				<?php echo aq_field_input('square1_title', $block_id, $square1_title, $size = 'full') ?>
+				<?php echo aq_field_input('block1_title', $block_id, $block1_title, $size = 'full') ?>
 			</label>
 		</p>
 
 		<p class="description">
-			<label for="<?php echo $this->get_field_id('square1_content') ?>">
+			<label for="<?php echo $this->get_field_id('block1_content') ?>">
 				Square 1 - Content
-				<?php echo aq_field_textarea('square1_content', $block_id, $square1_content, $size = 'full', true) ?>
+				<?php echo aq_field_textarea('block1_content', $block_id, $block1_content, $size = 'full', true) ?>
 			</label>
 		</p>
 		<p class="description">
@@ -103,14 +103,14 @@ class AQ_White_Squares_Block extends AQ_Block {
 			<section class="container full-img-bg white-squares-container">
 				<div class="trans-bg-dark col-md-10 col-md-offset-1">
 					<?php
-						if( $square1_title ){
+						if( $block1_title ){
 							echo '<div class="row no-margin">';
 							echo '	<article class="col-md-6 col-md-offset-6">';
-							echo '		<div class="white-square"><h2>'. htmlspecialchars_decode($square1_title) . '</h2>';
+							echo '		<div class="white-square"><h2>'. htmlspecialchars_decode($block1_title) . '</h2>';
 
-							if( $square1_content ){
+							if( $block1_content ){
 								echo '<div class="content">';
-								echo wpautop(do_shortcode(htmlspecialchars_decode($square1_content)));
+								echo wpautop(do_shortcode(htmlspecialchars_decode($block1_content)));
 								echo '		</div>';
 							}
 

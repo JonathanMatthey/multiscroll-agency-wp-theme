@@ -18,9 +18,7 @@ if(!( function_exists('ebor_load_scripts') )){
 		$protocol = is_ssl() ? 'https' : 'http';
 
 		//Enqueue Styles
-		wp_enqueue_style( 'ebor-raleway-font', "$protocol://fonts.googleapis.com/css?family=Raleway:400,300,700,900" );
-		wp_enqueue_style( 'ebor-open-sans-font', "$protocol://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800" );
-		wp_enqueue_style( 'ebor-montserrat-font', "$protocol://fonts.googleapis.com/css?family=Montserrat:400,700" );
+		// wp_enqueue_style( 'ebor-open-sans-font', "$protocol://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800" );
 
 		wp_enqueue_style( 'ebor-pace-style', get_template_directory_uri() . '/css/pace-'. get_option('pace_display','default') .'.css' );
 
@@ -29,6 +27,7 @@ if(!( function_exists('ebor_load_scripts') )){
 		wp_enqueue_style( 'ebor-owl-theme', get_template_directory_uri() . '/css/owl.theme.css' );
 		wp_enqueue_style( 'ebor-awesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
 		wp_enqueue_style( 'bootstrapxl', get_template_directory_uri() . '/css/bootstrapxl.css' );
+		wp_enqueue_style( 'fancybox', get_template_directory_uri() . '/js/fancybox/jquery.fancybox.css' );
 
 		wp_enqueue_style( 'ebor-style', get_stylesheet_uri() );
 		wp_enqueue_style( 'ebor-custom', get_template_directory_uri() . '/custom.css' );
@@ -40,6 +39,9 @@ if(!( function_exists('ebor_load_scripts') )){
 		//Enqueue Scripts
 		if( get_option('use_preloader', '1') == 1 )
 			wp_enqueue_script( 'ebor-pace', get_template_directory_uri() . '/js/pace.js', array('jquery'), false, false );
+
+		wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/js/fancybox/jquery.fancybox.pack.js', array('jquery'), false, true  );
+		wp_enqueue_script( 'fancybox-media', get_template_directory_uri() . '/js/fancybox/helpers/jquery.fancybox-media.js', array('jquery'), false, true  );
 
 		wp_enqueue_script( 'ebor-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), false, true  );
 		wp_enqueue_script( 'ebor-owl', get_template_directory_uri() . '/js/owl.carousel.js', array('jquery'), false, true  );

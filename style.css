@@ -132,8 +132,23 @@ h1,h2,h3,h4,h5,h6{
     height: 100%;
     position: fixed;
     z-index: 100;
-
 }
+
+.top-taylor-logo{
+    height:60px;
+    width:200px;
+    background-color:white;
+    left:50%;
+    top:0;
+    position: absolute;
+    transform:translateX(-50%);
+    z-index: 99999;
+    background-image: url(images/taylor-black.png);
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .nav-bg{
     height: 100%;
     background: url('images/nav-bg.jpg') no-repeat center center;
@@ -713,6 +728,9 @@ input[type="submit"]:hover,
 
 }
 
+
+
+
 /* CLIENT WALL  */
 .client-wall-container .client-logo{
     height:120px;
@@ -849,6 +867,45 @@ input[type="submit"]:hover,
 .full-width-text{
     padding: 100px 0;
 }
+
+
+/* WIDE CONTENT BLOCKS THEME BLOCK */
+.wide-white-content-container{
+
+}
+
+article .video-wrapper{
+    height:400px;
+}
+article .video-wrapper .video{
+    background-color:#111;
+    border:1px solid #ddd;
+    height:400px;
+}
+
+article h4{
+    padding: 13px 5px 10px 5px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: GothamMedium;
+    text-transform: uppercase;
+}
+
+article h4.index{
+    letter-spacing:-2px;
+    font-size: 22px;
+}
+
+.main-section-with-bg h1{
+    color:white;
+    font-family:GothamMedium;
+    padding-bottom:40px;
+}
+
+.wide-white-content-container article > .row > div {
+    background-color: white;
+}
+
 
 /*HOME - Slider Revolution*/
 

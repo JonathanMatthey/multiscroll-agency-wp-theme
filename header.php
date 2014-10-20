@@ -88,38 +88,42 @@
 
 	<!-- Desktop header -->
 	<section class="top-header visible-lg">
+
+		<a class="top-taylor-logo" href="http://localhost:8080/dev/taylorstrategy/wp/">
+		</a>
+
 		<!-- <div class="row"> -->
 			<article class="top-header-left col-md-6 white-bg text-center ">
 				<h3 class="dark"><a href="<?php echo home_url(); ?>">WHO WE ARE</a></h3>
 				<div class="vmenu">
 					<div class="vmenu-item">
-						<a href="#capabilities">Capabilities</a>
+						<a href="http://localhost:8080/dev/taylorstrategy/wp/#capabilities">Capabilities</a>
 					</div>
 					<div class="vmenu-item">
-						<a href="#people">People</a>
+						<a href="http://localhost:8080/dev/taylorstrategy/wp/#people">People</a>
 					</div>
 					<div class="vmenu-item">
-						<a href="#opportunities">Opportunities</a>
+						<a href="http://localhost:8080/dev/taylorstrategy/wp/#opportunities">Opportunities</a>
 					</div>
 					<div class="vmenu-item">
-						<a href="#contact">Contact</a>
+						<a href="http://localhost:8080/dev/taylorstrategy/wp/#contact">Contact</a>
 					</div>
 				</div>
 			</article>
-			<article class="top-header-right col-md-6 black-bg text-center">
-				<h3 class="white"><a href="<?php echo home_url(); ?>">WHAT WE DO</a></h3>
+			<article class="top-header-right col-md-6 white-bg text-center">
+				<h3 class="dark"><a href="<?php echo home_url(); ?>">WHAT WE DO</a></h3>
 				<div class="vmenu">
 					<div class="vmenu-item">
-						<a href="#clients">Clients</a>
+						<a href="http://localhost:8080/dev/taylorstrategy/wp/#clients">Clients</a>
 					</div>
 					<div class="vmenu-item">
-						<a href="#case-studies">Case Studies</a>
+						<a href="http://localhost:8080/dev/taylorstrategy/wp/#case-studies">Case Studies</a>
 					</div>
 					<div class="vmenu-item">
-						<a href="#news">News</a>
+						<a href="http://localhost:8080/dev/taylorstrategy/wp/#news">News</a>
 					</div>
 					<div class="vmenu-item">
-						<a href="#awards">Awards</a>
+						<a href="http://localhost:8080/dev/taylorstrategy/wp/#awards">Awards</a>
 					</div>
 				</div>
 			</article>

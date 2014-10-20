@@ -12,6 +12,14 @@ jQuery.fn.setAllToMaxHeight = function(){
 /*-----------------------------------------------------------------------------------*/
 jQuery(document).ready(function($){
 
+	jQuery('.fancybox-media').fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		helpers : {
+			media : {}
+		}
+	});
+
 	/**
 	 * WordPress Fixes
 	 */
