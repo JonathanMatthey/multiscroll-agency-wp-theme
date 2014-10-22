@@ -1,7 +1,7 @@
 <?php
 
 class AQ_Team_Block extends AQ_Block {
-	
+
 	//set and create block
 	function __construct() {
 		$block_options = array(
@@ -12,52 +12,52 @@ class AQ_Team_Block extends AQ_Block {
 		);
 		parent::__construct('aq_team_block', $block_options);
 	}//end construct
-	
+
 	function form($instance) {
 		$defaults = array(
 			'pppage' => '6',
 			'filter' => 'all',
 			'layout' => 'feed'
 		);
-		
+
 		$instance = wp_parse_args($instance, $defaults);
 		extract($instance);
-		
+
 		$args = array(
 			'orderby'                  => 'name',
 			'hide_empty'               => 0,
 			'hierarchical'             => 1,
 			'taxonomy'                 => 'team-category'
-		); 
-			
+		);
+
 		$filter_options = get_categories( $args );
 	?>
-	
+
 		<p class="description">
 			<label for="<?php echo $this->get_field_id('pppage') ?>">
 				Posts Per Page
 				<?php echo aq_field_input('pppage', $block_id, $pppage, $size = 'full', $type = 'number') ?>
 			</label>
 		</p>
-		
+
 		<p class="description">
 			<label for="<?php echo $this->get_field_id('filter') ?>">
 				Show a specific Team Category?
 				<?php echo ebor_portfolio_field_select('filter', $block_id, $filter_options, $filter) ?>
 			</label>
 		</p>
-		
+
 	<?php
 	}//end form
-	
+
 	function block($instance) {
 		extract($instance);
-	
+
 		$query_args = array(
 			'post_type' => 'team',
 			'posts_per_page' => $pppage
 		);
-		
+
 		if (!( $filter == 'all' )) {
 			if( function_exists( 'icl_object_id' ) ){
 				$filter = (int)icl_object_id( $filter, 'team-category', true);
@@ -70,44 +70,44 @@ class AQ_Team_Block extends AQ_Block {
 				)
 			);
 		}
-	
-		$team_query = new WP_Query( $query_args );	
+
+		$team_query = new WP_Query( $query_args );
 	?>
-		
+
 		<section class="team-container">
-		
+
 			<div class="row">
-				
-				<?php 
+
+				<?php
 					$i = 0;
-					if ( $team_query->have_posts() ) : while ( $team_query->have_posts() ) : $team_query->the_post(); 
+					if ( $team_query->have_posts() ) : while ( $team_query->have_posts() ) : $team_query->the_post();
 						$i++;
-						
+
 						$direction = 'right';
-						if( in_array($i, array(1,2,5,6,9,10,13,14,17,18,21,22)) )
+						if( in_array($i, array(1,2,3,7,8,9,13,14,15,19,20,21)) )
 							$direction = 'left';
-						
+
 						/**
 						 * Get blog posts by blog layout.
 						 */
 						get_template_part('loop/content', 'team-' . $direction);
-					
-					endwhile;	
-					else : 
-						
+
+					endwhile;
+					else :
+
 						/**
 						 * Display no posts message if none are found.
 						 */
 						get_template_part('loop/content','none');
-						
+
 					endif;
-				?> 
-			
+				?>
+
 			</div>
-		
+
 		</section>
-			
-	<?php	
+
+	<?php
 	}//end block
-	
+
 }//end class

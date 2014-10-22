@@ -119,8 +119,8 @@ class AQ_Wide_White_Content_Block extends AQ_Block {
 							echo '<div class="row  no-margin">';
 							echo '	<article class="col-md-12">';
 							echo '		<div class="row">';
-							echo '			<div class="col-md-1 item-index no-gutter"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
-							echo '			<div class="col-md-11"><h4>' . htmlspecialchars_decode($block1_title) . '</h4></div>';
+							echo '			<div class="col-xs-1 col-md-1 item-index no-gutter"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
+							echo '			<div class="col-xs-11 col-md-11"><h4>' . htmlspecialchars_decode($block1_title) . '</h4></div>';
 							echo '		</div>';
 							echo '		<div class="row">';
 							echo '			<div class="col-md-11 col-md-offset-1">';
@@ -138,8 +138,8 @@ class AQ_Wide_White_Content_Block extends AQ_Block {
 							echo '<div class="row  no-margin">';
 							echo '	<article class="col-md-12">';
 							echo '		<div class="row">';
-							echo '			<div class="col-md-1 item-index no-gutter"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
-							echo '			<div class="col-md-11"><h4>' . htmlspecialchars_decode($block1_title) . '</h4></div>';
+							echo '			<div class="col-xs-1 col-md-1 item-index no-gutter"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
+							echo '			<div class="col-xs-11 col-md-11"><h4>' . htmlspecialchars_decode($block1_title) . '</h4></div>';
 							echo '		</div>';
 							echo '		<div class="row">';
 							echo '			<div class="col-md-11 col-md-offset-1">';
@@ -157,8 +157,8 @@ class AQ_Wide_White_Content_Block extends AQ_Block {
 							echo '<div class="row  no-margin">';
 							echo '	<article class="col-md-12">';
 							echo '		<div class="row">';
-							echo '			<div class="col-md-1 item-index no-gutter"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
-							echo '			<div class="col-md-11"><h4>' . htmlspecialchars_decode($block1_title) . '</h4></div>';
+							echo '			<div class="col-xs-1 col-md-1 item-index no-gutter"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
+							echo '			<div class="col-xs-11 col-md-11"><h4>' . htmlspecialchars_decode($block1_title) . '</h4></div>';
 							echo '		</div>';
 							echo '		<div class="row">';
 							echo '			<div class="col-md-11 col-md-offset-1">';
@@ -176,8 +176,8 @@ class AQ_Wide_White_Content_Block extends AQ_Block {
 							echo '<div class="row  no-margin">';
 							echo '	<article class="col-md-12">';
 							echo '		<div class="row">';
-							echo '			<div class="col-md-1 item-index no-gutter"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
-							echo '			<div class="col-md-11"><h4>' . htmlspecialchars_decode($block1_title) . '</h4></div>';
+							echo '			<div class="col-xs-1 col-md-1 item-index no-gutter"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
+							echo '			<div class="col-xs-11 col-md-11"><h4>' . htmlspecialchars_decode($block1_title) . '</h4></div>';
 							echo '		</div>';
 							echo '		<div class="row">';
 							echo '			<div class="col-md-11 col-md-offset-1">';
@@ -195,8 +195,8 @@ class AQ_Wide_White_Content_Block extends AQ_Block {
 							echo '<div class="row  no-margin">';
 							echo '	<article class="col-md-12">';
 							echo '		<div class="row">';
-							echo '			<div class="col-md-1 item-index no-gutter"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
-							echo '			<div class="col-md-11"><h4>' . htmlspecialchars_decode($block1_title) . '</h4></div>';
+							echo '			<div class="col-xs-1 col-md-1 item-index no-gutter"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
+							echo '			<div class="col-xs-11 col-md-11"><h4>' . htmlspecialchars_decode($block1_title) . '</h4></div>';
 							echo '		</div>';
 							echo '		<div class="row">';
 							echo '			<div class="col-md-11 col-md-offset-1">';
@@ -214,8 +214,8 @@ class AQ_Wide_White_Content_Block extends AQ_Block {
 							echo '<div class="row  no-margin">';
 							echo '	<article class="col-md-12">';
 							echo '		<div class="row">';
-							echo '			<div class="col-md-1 item-index no-gutter"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
-							echo '			<div class="col-md-11"><h4>' . htmlspecialchars_decode($block1_title) . '</h4></div>';
+							echo '			<div class="col-xs-1 col-md-1 item-index no-gutter"><h4 class="index">' . htmlspecialchars_decode($block1_index) . '</h4></div>';
+							echo '			<div class="col-xs-11 col-md-11"><h4>' . htmlspecialchars_decode($block1_title) . '</h4></div>';
 							echo '		</div>';
 							echo '		<div class="row">';
 							echo '			<div class="col-md-11 col-md-offset-1 last-work-item">';

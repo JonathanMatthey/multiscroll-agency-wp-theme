@@ -679,82 +679,6 @@ input[type="submit"]:hover,
 }
 
 
-@media screen and (max-width: 768px){
-    .p-m{
-        padding:0;
-    }
-    .master-footer-content a.footer-link{
-        margin-top:10px;
-    }
-}
-
-@media screen and (min-width:768px){
-    .master-footer-content a.footer-link{
-        text-align:left;
-    }
-    .master-footer-content .contact-us a.footer-link{
-        text-align:center;
-    }
-}
-
-@media screen and (min-width:980px){
-    .social-links a{
-        margin-right:3px;
-        margin-left:3px;
-    }
-    .social-links a:first-child{
-        margin-left:0px;
-    }
-    .social-links a:last-child{
-        margin-right:0px;
-    }
-    .contact-us{
-        float:right;
-        padding-bottom:0;
-        margin-top:;
-    }
-    .social-links{
-        margin-top:0px;
-        margin-bottom:0px;
-    }
-    .p-m{
-        padding-top:6px;
-        padding-bottom:0;
-    }
-    .master-footer .taylor-logo-white{
-        margin-top:2px;
-    }
-    .master-footer .red-t{
-        margin-top:0px;
-    }
-    .footer-logo{
-        margin:8px 0 0 0;
-    }
-}
-
-@media screen and (min-width:1600px){
-    .master-footer .taylor-logo-white,
-    .master-footer .red-t{
-        float:left;
-    }
-
-    .social-links{
-        margin-bottom:0px;
-    }
-    .contact-us{
-        float:right;
-        padding-bottom:0;
-    }
-
-    .footer-logo{
-        margin: 0px 0;
-    }
-
-}
-
-
-
-
 /* CLIENT WALL  */
 .client-wall-container .client-logo{
     height:120px;
@@ -918,7 +842,7 @@ article .video{
 }
 
 article h4{
-    padding: 13px 5px 10px 5px;
+    padding: 13px 0px 10px 0px;
     font-size: 22px;
     font-weight: bold;
     font-family: GothamMedium;
@@ -934,6 +858,7 @@ article h4.index{
     color:white;
     font-family:GothamMedium;
     padding-bottom:40px;
+    padding-top:40px;
 }
 
 .wide-white-content-container article > .row > div {
@@ -4237,3 +4162,89 @@ textarea {
       }
 
   }
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .p-m{
+        padding:0;
+    }
+    .master-footer-content a.footer-link{
+        margin-top:10px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .master-footer-content a.footer-link{
+        text-align:left;
+    }
+    .master-footer-content .contact-us a.footer-link{
+        text-align:center;
+    }
+
+    .main-section-with-bg h1{
+        padding-top:0px;
+    }
+}
+
+@media screen and (min-width:980px){
+    .social-links a{
+        margin-right:3px;
+        margin-left:3px;
+    }
+    .social-links a:first-child{
+        margin-left:0px;
+    }
+    .social-links a:last-child{
+        margin-right:0px;
+    }
+    .contact-us{
+        float:right;
+        padding-bottom:0;
+        margin-top:;
+    }
+    .social-links{
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+    .p-m{
+        padding-top:6px;
+        padding-bottom:0;
+    }
+    .master-footer .taylor-logo-white{
+        margin-top:2px;
+    }
+    .master-footer .red-t{
+        margin-top:0px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .footer-logo{
+        margin:8px 0 0 0;
+    }
+}
+@media screen and (min-width:1600px){
+    .master-footer .taylor-logo-white,
+    .master-footer .red-t{
+        float:left;
+    }
+
+    .social-links{
+        margin-bottom:0px;
+    }
+    .contact-us{
+        float:right;
+        padding-bottom:0;
+    }
+
+    .footer-logo{
+        margin: 0px 0;
+    }
+
+}
+
+
