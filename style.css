@@ -834,7 +834,10 @@ article .video-wrapper{
 }
 
 article .video{
-    background-color:#111;
+    background-image:url(http://dvjvision.wpengine.netdna-cdn.com/wp-content/plugins/smarts3-video-plugin/images/overlay-play.png);
+    background-size:cover;
+    background-position: center center;
+
     border:1px solid #ddd;
     height:400px;
     display: block;
