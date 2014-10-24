@@ -25,7 +25,7 @@ class AQ_White_Squares_Block extends AQ_Block {
 			'square3_content' => '',
 			'square4_title' => '',
 			'square4_content' => ''
-			);
+		);
 
 		$instance = wp_parse_args($instance, $defaults);
 		extract($instance);

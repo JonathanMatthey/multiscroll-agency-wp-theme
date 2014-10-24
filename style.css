@@ -846,7 +846,7 @@ article .video{
 
 article h4{
     padding: 13px 0px 10px 0px;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: bold;
     font-family: GothamMedium;
     text-transform: uppercase;
@@ -854,7 +854,7 @@ article h4{
 
 article h4.index{
     letter-spacing:-2px;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .main-section-with-bg h1{
@@ -3425,7 +3425,7 @@ textarea {
   /*iPad Portrait Mode, iPad Mini and Small Tablets */
   @media (max-width: 768px) {
 
-   .container{
+  .container{
       max-width: 768px;
       padding-left: 20px;
       padding-right: 20px;
@@ -4166,17 +4166,18 @@ textarea {
 
   }
 
-
-
-
-
-
 @media screen and (max-width: 768px){
     .p-m{
         padding:0;
     }
     .master-footer-content a.footer-link{
         margin-top:10px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .wide-content{
+        padding:0 20px 20px 20px;
     }
 }
 
@@ -4228,6 +4229,13 @@ textarea {
 @media screen and (min-width:1200px){
     .footer-logo{
         margin:8px 0 0 0;
+    }
+
+    article h4{
+        font-size: 22px;
+    }
+    article h4.index{
+        font-size: 22px;
     }
 }
 @media screen and (min-width:1600px){
