@@ -47,6 +47,10 @@ if(class_exists('AQ_Page_Builder')) {
 		require_once ( "page_builder_blocks/wide_white_content_block.php" );
 		aq_register_block('AQ_Wide_White_Content_Block');
 	}
+	if(!( class_exists('AQ_Generic_Page_Block') )){
+		require_once ( "page_builder_blocks/generic_page_block.php" );
+		aq_register_block('AQ_Generic_Page_Block');
+	}
 	if(!( class_exists('AQ_Portfolio_Block') )){
 		require_once ( "page_builder_blocks/portfolio_block.php" );
 		aq_register_block('AQ_Portfolio_Block');

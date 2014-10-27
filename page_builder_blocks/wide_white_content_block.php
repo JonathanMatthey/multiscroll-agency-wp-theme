@@ -41,7 +41,18 @@ class AQ_Wide_White_Content_Block extends AQ_Block {
 			'block1_content' => '',
 			'block1_index' => '',
 			'video_type' => 'vimeo',
-			'block1_video_id' => ''
+			'block2_video_id' => '',
+			'block2_index' => '',
+			'block2_title' => '',
+			'block2_content' => '',
+			'block2_index' => '',
+			'block2_video_id' => '',
+			'block3_video_id' => '',
+			'block3_index' => '',
+			'block3_title' => '',
+			'block3_content' => '',
+			'block3_index' => '',
+			'block3_video_id' => ''
 		);
 		$instance = wp_parse_args($instance, $defaults);
 		extract($instance);
@@ -108,6 +119,68 @@ class AQ_Wide_White_Content_Block extends AQ_Block {
 		<br/>
 		<br/>
 
+		<h4>Block 2</h4>
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('block2_index') ?>">
+				Index / Date
+				<?php echo aq_field_input('block2_index', $block_id, $block2_index, $size = 'full') ?>
+			</label>
+		</p>
+
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('block2_title') ?>">
+				Title
+				<?php echo aq_field_input('block2_title', $block_id, $block2_title, $size = 'full') ?>
+			</label>
+		</p>
+
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('block2_content') ?>">
+				Content
+				<?php echo aq_field_textarea('block2_content', $block_id, $block2_content, $size = 'full', true) ?>
+			</label>
+		</p>
+
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('block2_video_id') ?>">
+				Video ID <code>e.g: 81676731 (Vimeo) or http://youtu.be/BsekcY04xvQ (Youtube)</code>
+				<?php echo aq_field_input('block2_video_id', $block_id, $block2_video_id, $size = 'full') ?>
+			</label>
+		</p>
+
+		<br/>
+		<br/>
+		<h4>Block 3</h4>
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('block3_index') ?>">
+				Index / Date
+				<?php echo aq_field_input('block3_index', $block_id, $block3_index, $size = 'full') ?>
+			</label>
+		</p>
+
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('block3_title') ?>">
+				Title
+				<?php echo aq_field_input('block3_title', $block_id, $block3_title, $size = 'full') ?>
+			</label>
+		</p>
+
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('block3_content') ?>">
+				Content
+				<?php echo aq_field_textarea('block3_content', $block_id, $block3_content, $size = 'full', true) ?>
+			</label>
+		</p>
+
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('block3_video_id') ?>">
+				Video ID <code>e.g: 81676731 (Vimeo) or http://youtu.be/BsekcY04xvQ (Youtube)</code>
+				<?php echo aq_field_input('block3_video_id', $block_id, $block3_video_id, $size = 'full') ?>
+			</label>
+		</p>
+
+		<br/>
+		<br/>
 
 	<?php
 	}// end form

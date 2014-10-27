@@ -89,7 +89,7 @@
 	<!-- Desktop header -->
 	<section class="top-header visible-lg">
 
-		<a class="top-taylor-logo" href="http://localhost:8080/dev/taylorstrategy/wp/">
+		<a class="top-taylor-logo" href="/taylorstrat/">
 		</a>
 
 		<!-- <div class="row"> -->
@@ -97,16 +97,16 @@
 				<h3 class="dark"><a href="<?php echo home_url(); ?>">WHO WE ARE</a></h3>
 				<div class="vmenu">
 					<div class="vmenu-item">
-						<a href="http://localhost:8080/dev/taylorstrategy/wp/capabilities">Capabilities</a>
+						<a href="/taylorstrat/capabilities">Capabilities</a>
 					</div>
 					<div class="vmenu-item">
-						<a href="http://localhost:8080/dev/taylorstrategy/wp/people">People</a>
+						<a href="/taylorstrat/people">People</a>
 					</div>
 					<div class="vmenu-item">
-						<a href="http://localhost:8080/dev/taylorstrategy/wp/opportunities">Opportunities</a>
+						<a href="/taylorstrat/opportunities">Opportunities</a>
 					</div>
 					<div class="vmenu-item">
-						<a href="http://localhost:8080/dev/taylorstrategy/wp/contact">Contact</a>
+						<a href="/taylorstrat/contact">Contact</a>
 					</div>
 				</div>
 			</article>
@@ -114,16 +114,16 @@
 				<h3 class="dark"><a href="<?php echo home_url(); ?>">WHAT WE DO</a></h3>
 				<div class="vmenu">
 					<div class="vmenu-item">
-						<a href="http://localhost:8080/dev/taylorstrategy/wp/clients">Clients</a>
+						<a href="/taylorstrat/clients">Clients</a>
 					</div>
 					<div class="vmenu-item">
-						<a href="http://localhost:8080/dev/taylorstrategy/wp/work">Work</a>
+						<a href="/taylorstrat/work">Work</a>
 					</div>
 					<div class="vmenu-item">
-						<a href="http://localhost:8080/dev/taylorstrategy/wp/news">News</a>
+						<a href="/taylorstrat/news">News</a>
 					</div>
 					<div class="vmenu-item">
-						<a href="http://localhost:8080/dev/taylorstrategy/wp/awards">Awards</a>
+						<a href="/taylorstrat/awards">Awards</a>
 					</div>
 				</div>
 			</article>
