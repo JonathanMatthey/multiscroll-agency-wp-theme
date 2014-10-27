@@ -41,7 +41,7 @@ if( get_option('slideout_shortcode') )
 		</div>
 	</div>
 	<div class="row sub-footer">
-		<div class="col-md-10 col-md-offset-1">
+		<div class="col-xs-12 col-md-10 col-md-offset-1">
 			Copyright @ 2011 - 2014 Taylor Strategy
 			<span class="made-in-nyc">
 				Made in NYC

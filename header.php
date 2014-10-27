@@ -97,16 +97,16 @@
 				<h3 class="dark"><a href="<?php echo home_url(); ?>">WHO WE ARE</a></h3>
 				<div class="vmenu">
 					<div class="vmenu-item">
-						<a href="http://localhost:8080/dev/taylorstrategy/wp/#capabilities">Capabilities</a>
+						<a href="http://localhost:8080/dev/taylorstrategy/wp/capabilities">Capabilities</a>
 					</div>
 					<div class="vmenu-item">
-						<a href="http://localhost:8080/dev/taylorstrategy/wp/#people">People</a>
+						<a href="http://localhost:8080/dev/taylorstrategy/wp/people">People</a>
 					</div>
 					<div class="vmenu-item">
-						<a href="http://localhost:8080/dev/taylorstrategy/wp/#opportunities">Opportunities</a>
+						<a href="http://localhost:8080/dev/taylorstrategy/wp/opportunities">Opportunities</a>
 					</div>
 					<div class="vmenu-item">
-						<a href="http://localhost:8080/dev/taylorstrategy/wp/#contact">Contact</a>
+						<a href="http://localhost:8080/dev/taylorstrategy/wp/contact">Contact</a>
 					</div>
 				</div>
 			</article>
@@ -114,16 +114,16 @@
 				<h3 class="dark"><a href="<?php echo home_url(); ?>">WHAT WE DO</a></h3>
 				<div class="vmenu">
 					<div class="vmenu-item">
-						<a href="http://localhost:8080/dev/taylorstrategy/wp/#clients">Clients</a>
+						<a href="http://localhost:8080/dev/taylorstrategy/wp/clients">Clients</a>
 					</div>
 					<div class="vmenu-item">
-						<a href="http://localhost:8080/dev/taylorstrategy/wp/#case-studies">Case Studies</a>
+						<a href="http://localhost:8080/dev/taylorstrategy/wp/work">Work</a>
 					</div>
 					<div class="vmenu-item">
-						<a href="http://localhost:8080/dev/taylorstrategy/wp/#news">News</a>
+						<a href="http://localhost:8080/dev/taylorstrategy/wp/news">News</a>
 					</div>
 					<div class="vmenu-item">
-						<a href="http://localhost:8080/dev/taylorstrategy/wp/#awards">Awards</a>
+						<a href="http://localhost:8080/dev/taylorstrategy/wp/awards">Awards</a>
 					</div>
 				</div>
 			</article>

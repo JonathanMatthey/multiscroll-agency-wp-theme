@@ -256,7 +256,7 @@ jQuery(document).ready(function($){
 	    	navigationTooltips: tooltipsArray,
 	    	loopBottom: true,
 	    	loopTop: true,
-	    	anchors: ['capabilities', 'people', 'opportunities', 'contact', 'clients','case-studies','news','awards'],
+	    	anchors: ['home','capabilities', 'people', 'opportunities', 'contact', 'clients','case-studies','news','awards'],
         afterLoad: function(anchorLink, index){
         	console.log(anchorLink,index);
       		$(".top-header").removeClass('left-section right-section');

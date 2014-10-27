@@ -497,7 +497,7 @@ input[type="submit"]:hover,
     top: 0;
     width: 100%;
     z-index: 101;
-    min-height: 60px;
+    min-height: 70px;
     /*box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);*/
 }
 .top-header-left, .top-header-right{
@@ -505,12 +505,12 @@ input[type="submit"]:hover,
 }
 .top-header h3{
     font-family: "Montserrat",Arial,Helvetica,sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     letter-spacing: 4px;
-    line-height: 50px;
+    line-height: 60px;
     text-transform: uppercase;
-    height:50px;
+    height:60px;
 }
 
 /*PAGE HEADER*/
@@ -528,7 +528,7 @@ input[type="submit"]:hover,
 /*-------------------------------------------------------------------*/
 
 #content{
-    margin-top:50px;
+    margin-top:48px;
 }
 
 .red-t{
@@ -808,6 +808,10 @@ input[type="submit"]:hover,
     .white-squares-container article p:last-child{
         margin-bottom:0;
         padding-bottom:0;
+    }
+    .white-squares-container article h2{
+        /*line-height: 30px;*/
+        font-size:18px;
     }
 }
 
@@ -2325,6 +2329,7 @@ html, body {
     margin-top: -32px;
     top: 50%;
     opacity: 1;
+    display: none;
 }
 #multiscroll-nav.right {
     right: 17px;
@@ -2465,14 +2470,14 @@ html, body {
                 }
                 .ms-static-title h1 {
                     font-family: "Raleway",Arial,Helvetica,sans-serif;
-                    font-size: 64px;
+                    font-size: 52px;
                     font-weight: 300;
-                    letter-spacing: 8px;
+                    letter-spacing: 3px;
                     line-height: 76px;
                     text-transform: uppercase;
                     display: inline-block;
-                    border-bottom:5px solid white;
-                    padding: 10px 10px 2px 15px;
+                    border-bottom:4px solid white;
+                    padding: 10px 10px 2px 10px;
                     transition: background-color 120ms linear, color  200ms linear;
                 }
 
@@ -2482,14 +2487,17 @@ html, body {
 
                .ms-static-title h3 > span {
                 font-family: "Montserrat",Arial,Helvetica,sans-serif;
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 300;
-                letter-spacing: 8px;
+                letter-spacing: 2px;
                 line-height: 28px;
-                padding: 7px;
-                padding-left: 15px;
+                padding: 0px 20px 0 15px;
                 text-transform: uppercase;
-            }
+                display: inline-block;
+                background: transparent;
+                color: white;
+                width: 100%;
+                }
             /*-----------------------------------------------------------------------------------*/
 /*	WORDPRESS STYLES
 /*-----------------------------------------------------------------------------------*/
@@ -2582,6 +2590,15 @@ hr {
 .aq-block-aq_image_block {
 	margin-bottom: 25px;
 	text-align: center !important;
+}
+
+.aq-block.aq-first .page-head{
+    background-color:#f0f0f0;
+    margin-top:0;
+    color:white;
+}
+.black.sub-heading{
+    background-color:transparent;
 }
 #service-carousel .owl-prev img,
 #service-carousel .owl-next img {
@@ -3941,8 +3958,18 @@ textarea {
   .mob-add-bottom{
       margin-bottom:30px;
   }
+  .split-home-panel h1,
+  .split-home-panel h2,
+  .split-home-panel h3,
+  .split-home-panel h4,
+  .split-home-panel h5{
+      text-align: left;
+    }
   .text-left, .text-right, p, h1, h2, h3, h4, h5{
       text-align: center;
+  }
+  .ms-static-title h1{
+    border-bottom:2px solid white;
   }
   .page-section, .separator-section{
       padding: 40px 0;
@@ -4047,8 +4074,42 @@ textarea {
 
    .container{
       max-width: 320px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+  .master-footer-content{
+    padding:0;
+  }
+  .sub-footer{
+    font-size:10px;
+    text-align: left;
+  }
+  .made-in-nyc{
+    float:right;
+  }
+  .ms-static-title h3{
+    margin-top:5px;
+  }
+
+  #content div{
+  }
+  #aq-block-436-1{
+  }
+
+  article h4{
+    font-size:13px;
+  }
+
+  article h4.index{
+    line-height: 14px;
+  }
+
+  .ms-static-title h1{
+    padding: 5px 3px 2px 5px;
+  }
+  .ms-static-title h3 > span{
+    width:100%;
+    padding:0 5px;
   }
   .add-top-half{
       padding-top: 35px;
@@ -4097,6 +4158,7 @@ textarea {
   .ms-static-title h1, .ms-section h1{
       font-size: 16px;
       line-height: 23px;
+      letter-spacing: 3px;
   }
   .news-item p > span, .ms-static-title h3 > span, .ms-section h3 > span, .agency-head h3 > span, .works-filter li a > span{
       font-size: 10px;
