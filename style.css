@@ -767,11 +767,29 @@ input[type="submit"]:hover,
     background-image:url(images/client-logos/15.png);
 }
 
+.page-id-415 .sub-heading{
+    margin-bottom:0;
+    margin-top:20px;
+}
+.page-id-415 .team-social{
+    padding-bottom:20px;
+    margin-top:0px;
+}
+.page-id-415 .aq-block-aq_team_block{
+    padding: 100px 100px;
+}
+.page-id-415 .team-thumb{
+    /*padding-top:20px!important;*/
+    background:#fff;
+}
 
 /* AGENCY / WHITE SQUARES THEME */
 .white-squares-container{
 }
 
+.white-square a{
+    text-decoration: underline;
+}
 .full-img-bg{
     padding:100px;
 }
@@ -884,6 +902,10 @@ article h4.index{
 
 
 /*HOME - Slider Revolution*/
+
+.home.page h3{
+    text-align:left;
+}
 
 .tp-leftarrow{
     left: 140px !important;
@@ -2501,7 +2523,7 @@ html, body {
                 font-weight: 300;
                 letter-spacing: 2px;
                 line-height: 28px;
-                padding: 0px 20px 0 15px;
+                padding: 0px 20px 0 13px;
                 text-transform: uppercase;
                 display: inline-block;
                 background: transparent;
@@ -3386,12 +3408,23 @@ textarea {
 	.ms-static-title h1, .ms-section h1{
 		font-size: 20px;
 		line-height: 27px;
+        border-bottom:2px solid white;
 	}
 	.news-item p > span, .ms-static-title h3 > span, .ms-section h3 > span, .agency-head h3 > span, .works-filter li a > span{
 		font-size: 14px;
 		line-height: 21px;
 		letter-spacing: 1px;
+        padding-left:10px;
 	}
+    .ms-static-title h3{
+        margin-top: 0;
+    }
+    .ms-static-title h3 > span{
+        padding-left:8px;
+    }
+    .ms-static-title h1{
+        padding: 2px 3px 1px 7px;
+    }
 	.ms-overlay{
 		padding: 10px;
 	}

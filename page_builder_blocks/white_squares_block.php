@@ -19,6 +19,8 @@ class AQ_White_Squares_Block extends AQ_Block {
 			'bg_image' => '',
 			'block1_title' => '',
 			'block1_content' => '',
+			'block1_link_href' => '',
+			'block1_link_content' => '',
 			'square2_title' => '',
 			'square2_content' => '',
 			'square3_title' => '',
@@ -49,6 +51,18 @@ class AQ_White_Squares_Block extends AQ_Block {
 			<label for="<?php echo $this->get_field_id('block1_content') ?>">
 				Square 1 - Content
 				<?php echo aq_field_textarea('block1_content', $block_id, $block1_content, $size = 'full', true) ?>
+			</label>
+		</p>
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('block1_link_href') ?>">
+				Square 1 - Link href
+				<?php echo aq_field_input('block1_link_href', $block_id, $block1_link_href, $size = 'full') ?>
+			</label>
+		</p>
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('block1_link_content') ?>">
+				Square 1 - Link Content
+				<?php echo aq_field_input('block1_link_content', $block_id, $block1_link_content, $size = 'full') ?>
 			</label>
 		</p>
 		<p class="description">
@@ -112,6 +126,7 @@ class AQ_White_Squares_Block extends AQ_Block {
 								echo '<div class="content">';
 								echo wpautop(do_shortcode(htmlspecialchars_decode($block1_content)));
 								echo '		</div>';
+								echo '<a href="' . $block1_link_href . '"">' . $block1_link_content . '</a>';
 							}
 
 							echo '		</div>';
