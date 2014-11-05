@@ -14,23 +14,23 @@ if( get_option('slideout_shortcode') )
 			</div>
 			<div class="col-xs-12 col-lg-10 col-xl-8 no-gutter">
 				<div class="col-xs-12 col-sm-2 col-sm-offset-2 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-2 p-m">
-					<a class="footer-link" href="/taylorst/agency">Agency</a>
-					<a class="footer-link" href="/taylorst/people">People</a>
+					<a class="footer-link" href="/taylorstrat/agency">Agency</a>
+					<a class="footer-link" href="/taylorstrat/people">People</a>
 				</div>
 				<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 p-m">
-					<a class="footer-link" href="/taylorst/work">Work</a>
-					<a class="footer-link" href="/taylorst/clients">Clients</a>
+					<a class="footer-link" href="/taylorstrat/work">Work</a>
+					<a class="footer-link" href="/taylorstrat/clients">Clients</a>
 				</div>
 				<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 p-m">
-					<a class="footer-link" href="/taylorst/capabilities">Capabilities</a>
-					<a class="footer-link" href="/taylorst/awards">Awards</a>
+					<a class="footer-link" href="/taylorstrat/capabilities">Capabilities</a>
+					<a class="footer-link" href="/taylorstrat/awards">Awards</a>
 				</div>
 				<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 p-m">
-					<a class="footer-link" href="/taylorst/opportunities">Opportunities</a>
-					<a class="footer-link" href="/taylorst/news">News</a>
+					<a class="footer-link" href="/taylorstrat/opportunities">Opportunities</a>
+					<a class="footer-link" href="/taylorstrat/news">News</a>
 				</div>
 				<div class="col-xs-12 col-md-12 col-md-2 col-lg-2 p-m contact-us">
-					<a class="footer-link" href="/taylorst/contact">Contact Us</a>
+					<a class="footer-link" href="/taylorstrat/contact">Contact Us</a>
 					<div class="social-links">
 						<a class="twitter"><i class="fa fa-twitter"></i></a>
 						<a class="facebook"><i class="fa fa-facebook"></i></a>
