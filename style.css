@@ -871,9 +871,10 @@ article .video{
     background-position: center center;
 
     border:1px solid #ddd;
-    height:400px;
+    height:250px;
     display: block;
     width:100%;
+    margin-top:30px;
 }
 
 article h4{
