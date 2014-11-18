@@ -689,6 +689,7 @@ input[type="submit"]:hover,
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 220px auto;
+    transition:all 100ms linear;
 }
 
 @media (max-width: 768px) {
@@ -711,60 +712,120 @@ input[type="submit"]:hover,
     background-image:url(images/client-logos/1.png);
 }
 
+.client-wall-container .client-logo:nth-of-type(1):hover{
+    background-image:url(images/client-logos/1b.png);
+}
+
 .client-wall-container .client-logo:nth-of-type(2){
     background-image:url(images/client-logos/2.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(2):hover{
+    background-image:url(images/client-logos/2b.png);
 }
 
 .client-wall-container .client-logo:nth-of-type(3){
     background-image:url(images/client-logos/3.png);
 }
 
+.client-wall-container .client-logo:nth-of-type(3):hover{
+    background-image:url(images/client-logos/3b.png);
+}
+
 .client-wall-container .client-logo:nth-of-type(4){
     background-image:url(images/client-logos/4.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(4):hover{
+    background-image:url(images/client-logos/4b.png);
 }
 
 .client-wall-container .client-logo:nth-of-type(5){
     background-image:url(images/client-logos/5.png);
 }
 
+.client-wall-container .client-logo:nth-of-type(5):hover{
+    background-image:url(images/client-logos/5b.png);
+}
+
 .client-wall-container .client-logo:nth-of-type(6){
     background-image:url(images/client-logos/6.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(6):hover{
+    background-image:url(images/client-logos/6b.png);
 }
 
 .client-wall-container .client-logo:nth-of-type(7){
     background-image:url(images/client-logos/7.png);
 }
 
+.client-wall-container .client-logo:nth-of-type(7):hover{
+    background-image:url(images/client-logos/7b.png);
+}
+
 .client-wall-container .client-logo:nth-of-type(8){
     background-image:url(images/client-logos/8.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(8):hover{
+    background-image:url(images/client-logos/8b.png);
 }
 
 .client-wall-container .client-logo:nth-of-type(9){
     background-image:url(images/client-logos/9.png);
 }
 
+.client-wall-container .client-logo:nth-of-type(9):hover{
+    background-image:url(images/client-logos/9b.png);
+}
+
 .client-wall-container .client-logo:nth-of-type(10){
     background-image:url(images/client-logos/10.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(10):hover{
+    background-image:url(images/client-logos/10b.png);
 }
 
 .client-wall-container .client-logo:nth-of-type(11){
     background-image:url(images/client-logos/11.png);
 }
 
+.client-wall-container .client-logo:nth-of-type(11):hover{
+    background-image:url(images/client-logos/11b.png);
+}
+
 .client-wall-container .client-logo:nth-of-type(12){
     background-image:url(images/client-logos/12.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(12):hover{
+    background-image:url(images/client-logos/12b.png);
 }
 
 .client-wall-container .client-logo:nth-of-type(13){
     background-image:url(images/client-logos/13.png);
 }
 
+.client-wall-container .client-logo:nth-of-type(13):hover{
+    background-image:url(images/client-logos/13b.png);
+}
+
 .client-wall-container .client-logo:nth-of-type(14){
     background-image:url(images/client-logos/14.png);
 }
 
+.client-wall-container .client-logo:nth-of-type(14):hover{
+    background-image:url(images/client-logos/14b.png);
+}
+
 .client-wall-container .client-logo:nth-of-type(15){
     background-image:url(images/client-logos/15.png);
+}
+
+.client-wall-container .client-logo:nth-of-type(15):hover{
+    background-image:url(images/client-logos/15b.png);
 }
 
 .page-id-415 .sub-heading{
