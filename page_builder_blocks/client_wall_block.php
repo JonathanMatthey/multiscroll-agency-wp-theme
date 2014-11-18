@@ -42,6 +42,7 @@ class AQ_Client_Wall_Block extends AQ_Block {
 		<div class="row">
 			<section class="container full-img-bg client-wall-container">
 				<div class="trans-bg-dark col-xs-10 col-xs-offset-1">
+					<h1>Clients</h1>
 					<div class="col-xs-12 col-sm-6 col-md-4  col-lg-3 client-logo"></div>
 					<div class="col-xs-12 col-sm-6 col-md-4  col-lg-3 client-logo"></div>
 					<div class="col-xs-12 col-sm-6 col-md-4  col-lg-3 client-logo"></div>

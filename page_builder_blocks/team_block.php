@@ -15,7 +15,7 @@ class AQ_Team_Block extends AQ_Block {
 
 	function form($instance) {
 		$defaults = array(
-			'pppage' => '6',
+			'pppage' => '40',
 			'filter' => 'all',
 			'layout' => 'feed'
 		);
@@ -55,7 +55,7 @@ class AQ_Team_Block extends AQ_Block {
 
 		$query_args = array(
 			'post_type' => 'team',
-			'posts_per_page' => $pppage
+			'posts_per_page' => 20 // $pppage
 		);
 
 		if (!( $filter == 'all' )) {
@@ -84,7 +84,7 @@ class AQ_Team_Block extends AQ_Block {
 						$i++;
 
 						$direction = 'right';
-						if( in_array($i, array(1,2,3,7,8,9,13,14,15,19,20,21)) )
+						if( in_array($i, array(1,2,3,4,9,10,11,12,17,18,19,20)) )
 							$direction = 'left';
 
 						/**

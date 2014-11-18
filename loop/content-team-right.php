@@ -2,7 +2,7 @@
 	$job = get_post_meta( $post->ID, '_ebor_the_job_title', true );
 ?>
 
-<article class="col-md-2 no-gutter team-info white-bg text-center">
+<article class="col-sm-4 col-md-1half no-gutter team-info white-bg text-center">
 	<div class="triangle-arrow triangle-arrow-left"></div>
 
 	<div class="valign">
@@ -19,6 +19,6 @@
 
 </article>
 
-<article class="col-md-2 no-gutter team-thumb silver-bg text-center">
+<article class="col-sm-4 col-md-1half no-gutter team-thumb silver-bg text-center">
 	<?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?>
 </article>

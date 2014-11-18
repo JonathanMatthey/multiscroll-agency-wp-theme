@@ -16,6 +16,7 @@ class AQ_White_Squares_Block extends AQ_Block {
 	function form($instance) {
 
 		$defaults = array(
+			'page_title' => '',
 			'bg_image' => '',
 			'block1_title' => '',
 			'block1_content' => '',
@@ -33,6 +34,12 @@ class AQ_White_Squares_Block extends AQ_Block {
 		extract($instance);
 		?>
 
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('page_title') ?>">
+				Page Title
+				<?php echo aq_field_input('page_title', $block_id, $page_title, $size = 'full') ?>
+			</label>
+		</p>
 		<p class="description">
 			<label for="<?php echo $this->get_field_id('bg_image') ?>">
 				Upload Background Image
@@ -117,6 +124,7 @@ class AQ_White_Squares_Block extends AQ_Block {
 			<section class="container full-img-bg white-squares-container">
 				<div class="trans-bg-dark col-md-10 col-md-offset-1">
 					<?php
+						echo '<h1>' . htmlspecialchars_decode($page_title) . '</h1>';
 						if( $block1_title ){
 							echo '<div class="row no-margin">';
 							echo '	<article class="col-md-6 col-md-offset-6">';

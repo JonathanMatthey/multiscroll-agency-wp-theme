@@ -62,14 +62,14 @@ class AQ_Agency_Head_Block extends AQ_Block {
 
 		<section class="container page-head agency-head white-bg">
 		  <div class="row">
-        <article class="col-md-8 col-md-offset-2 text-center">
-              <div class="inner-pad">
+        <article class="col-md-12 text-center page-header">
+              <div class="inner-pad agency-head-black-box main-section-with-bg">
                   <?php
                   	if( $image )
                   		echo '<img alt="'. $title .'" src="'. $image .'"/>';
 
                   	if( $title )
-                  		echo '<h1 class="black main-heading remove-bottom"><span>'. htmlspecialchars_decode($title) .'</span></h1>';
+                  		echo '<h1 class="">'. htmlspecialchars_decode($title) .'</h1>';
 
                   	if( $subtitle )
                   		echo '<h3 class="black sub-heading"><span class="color-bg">'. htmlspecialchars_decode($subtitle) .'</span></h3>';

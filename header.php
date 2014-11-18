@@ -97,7 +97,7 @@
 				<h3 class="dark"><a href="<?php echo home_url(); ?>">WHO WE ARE</a></h3>
 				<div class="vmenu">
 					<div class="vmenu-item">
-						<a href="/taylorstrat/capabilities">Capabilities</a>
+						<a href="/taylorstrat/expertise">Expertise</a>
 					</div>
 					<div class="vmenu-item">
 						<a href="/taylorstrat/people">People</a>

@@ -22,7 +22,7 @@ if( get_option('slideout_shortcode') )
 					<a class="footer-link" href="/taylorstrat/clients">Clients</a>
 				</div>
 				<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 p-m">
-					<a class="footer-link" href="/taylorstrat/capabilities">Capabilities</a>
+					<a class="footer-link" href="/taylorstrat/expertise">expertise</a>
 					<a class="footer-link" href="/taylorstrat/awards">Awards</a>
 				</div>
 				<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 p-m">
@@ -42,7 +42,7 @@ if( get_option('slideout_shortcode') )
 	</div>
 	<div class="row sub-footer">
 		<div class="col-xs-12 col-md-10 col-md-offset-1">
-			Copyright @ 2011 - 2014 Taylor Strategy
+			Copyright @ 2011 - 2014 Taylor
 			<span class="made-in-nyc">
 				Made in NYC
 			</span>

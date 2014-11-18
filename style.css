@@ -901,9 +901,17 @@ article h4.index{
 }
 
 
+.page-id-414 .white-squares-container article h2{
+    line-height: 36px;
+}
+
+.team-social > span > a{
+    line-height: 34px;
+}
+
 /*HOME - Slider Revolution*/
 
-.home.page h3{
+.home.page .text-left h3{
     text-align:left;
 }
 
@@ -1386,7 +1394,7 @@ article h4.index{
 
 /*AWARDS*/
 .awards-container{
-    padding: 100px;
+    padding: 100px 100px 0px 100px;
 }
 .awards-item{
     border-right: solid 1px #ccc;
@@ -4360,7 +4368,43 @@ textarea {
     .footer-logo{
         margin: 0px 0;
     }
+}
 
+.showcase-alt-left:first-child h1::before {
+    content:'';
+    width:45px;
+    height:45px;
+    position: absolute;
+    top:-30px;
+    background-image:url(images/t-red.png);
+    background-size:contain;
+    left:0;
+    vertical-align: top;
+}
+.showcase-alt-left:first-child h1 {
+    margin-left:50px;
 }
 
 
+.col-md-1half{
+    width:12.5%;
+    float:left;
+}
+
+.agency-head-black-box{
+    background-color:rgba(0,0,0,0.8);
+    margin:50px;
+    padding:70px;
+    color:#fff;
+}
+
+.agency-head h1{
+    margin-bottom:20px;
+    padding-bottom:0;
+}
+
+.agency-head .page-header{
+    margin:0;
+    background-image:url(images/page-header-bg.jpg);
+    background-size:cover;
+}
