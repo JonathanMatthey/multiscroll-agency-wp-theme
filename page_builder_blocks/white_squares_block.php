@@ -24,10 +24,16 @@ class AQ_White_Squares_Block extends AQ_Block {
 			'block1_link_content' => '',
 			'square2_title' => '',
 			'square2_content' => '',
+			'square2_link_href' => '',
+			'square2_link_content' => '',
 			'square3_title' => '',
 			'square3_content' => '',
+			'square3_link_href' => '',
+			'square3_link_content' => '',
 			'square4_title' => '',
-			'square4_content' => ''
+			'square4_content' => '',
+			'square4_link_href' => '',
+			'square4_link_content' => '',
 		);
 
 		$instance = wp_parse_args($instance, $defaults);
@@ -46,14 +52,12 @@ class AQ_White_Squares_Block extends AQ_Block {
 				<?php echo aq_field_upload('bg_image', $block_id, $bg_image, $media_type = 'image') ?>
 			</label>
 		</p>
-
 		<p class="description">
 			<label for="<?php echo $this->get_field_id('block1_title') ?>">
 				Square 1 - Title
 				<?php echo aq_field_input('block1_title', $block_id, $block1_title, $size = 'full') ?>
 			</label>
 		</p>
-
 		<p class="description">
 			<label for="<?php echo $this->get_field_id('block1_content') ?>">
 				Square 1 - Content
@@ -78,11 +82,22 @@ class AQ_White_Squares_Block extends AQ_Block {
 				<?php echo aq_field_input('square2_title', $block_id, $square2_title, $size = 'full') ?>
 			</label>
 		</p>
-
 		<p class="description">
 			<label for="<?php echo $this->get_field_id('square2_content') ?>">
 				Square 2 - Content  <code>Optional</code>
 				<?php echo aq_field_textarea('square2_content', $block_id, $square2_content, $size = 'full', true) ?>
+			</label>
+		</p>
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('square2_link_href') ?>">
+				Square 2 - Link href
+				<?php echo aq_field_input('square2_link_href', $block_id, $square2_link_href, $size = 'full') ?>
+			</label>
+		</p>
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('square2_link_content') ?>">
+				Square 2 - Link Content
+				<?php echo aq_field_input('square2_link_content', $block_id, $square2_link_content, $size = 'full') ?>
 			</label>
 		</p>
 		<p class="description">
@@ -91,11 +106,22 @@ class AQ_White_Squares_Block extends AQ_Block {
 				<?php echo aq_field_input('square3_title', $block_id, $square3_title, $size = 'full') ?>
 			</label>
 		</p>
-
 		<p class="description">
 			<label for="<?php echo $this->get_field_id('square3_content') ?>">
 				Square 3 - Content  <code>Optional</code>
 				<?php echo aq_field_textarea('square3_content', $block_id, $square3_content, $size = 'full', true) ?>
+			</label>
+		</p>
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('square3_link_href') ?>">
+				Square 3 - Link href
+				<?php echo aq_field_input('square3_link_href', $block_id, $square3_link_href, $size = 'full') ?>
+			</label>
+		</p>
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('square3_link_content') ?>">
+				Square 3 - Link Content
+				<?php echo aq_field_input('square3_link_content', $block_id, $square3_link_content, $size = 'full') ?>
 			</label>
 		</p>
 		<p class="description">
@@ -104,11 +130,22 @@ class AQ_White_Squares_Block extends AQ_Block {
 				<?php echo aq_field_input('square4_title', $block_id, $square4_title, $size = 'full') ?>
 			</label>
 		</p>
-
 		<p class="description">
 			<label for="<?php echo $this->get_field_id('square4_content') ?>">
 				Square 4 - Content  <code>Optional</code>
 				<?php echo aq_field_textarea('square4_content', $block_id, $square4_content, $size = 'full', true) ?>
+			</label>
+		</p>
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('square4_link_href') ?>">
+				Square 4 - Link href
+				<?php echo aq_field_input('square4_link_href', $block_id, $square4_link_href, $size = 'full') ?>
+			</label>
+		</p>
+		<p class="description">
+			<label for="<?php echo $this->get_field_id('square4_link_content') ?>">
+				Square 4 - Link Content
+				<?php echo aq_field_input('square4_link_content', $block_id, $square4_link_content, $size = 'full') ?>
 			</label>
 		</p>
 
@@ -125,10 +162,13 @@ class AQ_White_Squares_Block extends AQ_Block {
 				<div class="trans-bg-dark col-md-10 col-md-offset-1">
 					<?php
 						echo '<h1>' . htmlspecialchars_decode($page_title) . '</h1>';
-						if( $block1_title ){
+						if( $block1_title || $block1_content){
 							echo '<div class="row no-margin">';
 							echo '	<article class="col-md-6 col-md-offset-6">';
-							echo '		<div class="white-square"><h2>'. htmlspecialchars_decode($block1_title) . '</h2>';
+							echo '		<div class="white-square">';
+							if( $block1_title ){
+								echo '			<h2>'. htmlspecialchars_decode($block1_title) . '</h2>';
+							}
 
 							if( $block1_content ){
 								echo '<div class="content">';
@@ -136,55 +176,63 @@ class AQ_White_Squares_Block extends AQ_Block {
 								echo '		</div>';
 								echo '<a href="' . $block1_link_href . '"">' . $block1_link_content . '</a>';
 							}
-
 							echo '		</div>';
 							echo '	</article>';
 							echo '</div>';
 						}
 
-						if( $square2_title ){
+						if( $square2_title || $square2_content){
 							echo '<div class="row no-margin">';
 							echo '	<article class="col-md-6">';
-							echo '		<div class="white-square"><h2>'. htmlspecialchars_decode($square2_title) . '</h2>';
+							echo '		<div class="white-square">';
+							if( $square2_title ){
+								echo '			<h2>'. htmlspecialchars_decode($square2_title) . '</h2>';
+							}
 
 							if( $square2_content ){
 								echo '<div class="content">';
 								echo wpautop(do_shortcode(htmlspecialchars_decode($square2_content)));
 								echo '		</div>';
+								echo '<a href="' . $square2_link_href . '"">' . $square2_link_content . '</a>';
 							}
-
 							echo '		</div>';
 							echo '	</article>';
 							echo '</div>';
 						}
 
-						if( $square3_title ){
+						if( $square3_title || $square3_content){
 							echo '<div class="row no-margin">';
 							echo '	<article class="col-md-6 col-md-offset-6">';
-							echo '		<div class="white-square"><h2>'. htmlspecialchars_decode($square3_title) . '</h2>';
+							echo '		<div class="white-square">';
+							if( $square3_title ){
+								echo '			<h2>'. htmlspecialchars_decode($square3_title) . '</h2>';
+							}
 
 							if( $square3_content ){
 								echo '<div class="content">';
 								echo wpautop(do_shortcode(htmlspecialchars_decode($square3_content)));
 								echo '		</div>';
+								echo '<a href="' . $square3_link_href . '"">' . $square3_link_content . '</a>';
 							}
-
 							echo '		</div>';
 							echo '	</article>';
 							echo '</div>';
 						}
 
-						if( $square4_title ){
+						if( $square4_title || $square4_content){
 							echo '<div class="row no-margin">';
 							echo '	<article class="col-md-6">';
-							echo '		<div class="white-square"><h2>'. htmlspecialchars_decode($square4_title) . '</h2>';
+							echo '		<div class="white-square">';
+							if( $square4_title ){
+								echo '			<h2>'. htmlspecialchars_decode($square4_title) . '</h2>';
+							}
 
 							if( $square4_content ){
 								echo '<div class="content">';
 								echo wpautop(do_shortcode(htmlspecialchars_decode($square4_content)));
 								echo '		</div>';
+								echo '<a href="' . $square4_link_href . '"">' . $square4_link_content . '</a>';
 							}
-
 							echo '		</div>';
 							echo '	</article>';
 							echo '</div>';
